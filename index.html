@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线赛事网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li class="dropdown">
+                    <a href="#about">赛事介绍</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#event-a">赛事A</a></li>
+                        <li><a href="#event-b">赛事B</a></li>
+                        <li><a href="#event-c">赛事C</a></li>
+                    </ul>
+                </li>
+                <li><a href="#pricing">购买选项</a></li>
+                <li><a href="#faq">常见问题</a></li>
+                <li><a href="#testimonials">用户评价</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>欢迎来到我们的在线课程</h1>
+            <p>这里是网站的标志和名称</p>
+            <p>简短的课程介绍和独特的卖点</p>
+            <button>立即购买</button>
+            <button>了解更多</button>
+        </section>
+
+        <section id="about">
+            <h2>赛事介绍</h2>
+            <p>这里是赛事的详细描述，包括赛事目标、内容概览、适用人群</p>
+            <!-- 赛事A、B、C的具体内容 -->
+            <div id="event-a">
+                <h3>赛事A</h3>
+                <p>赛事A的详细介绍...</p>
+            </div>
+            <div id="event-b">
+                <h3>赛事B</h3>
+                <p>赛事B的详细介绍...</p>
+            </div>
+            <div id="event-c">
+                <h3>赛事C</h3>
+                <p>赛事C的详细介绍...</p>
+            </div>
+            <div class="teacher-intro">
+                <h3>教师介绍</h3>
+                <button id="prevButton" class="slider-button">&lt;</button>
+                <button id="nextButton" class="slider-button">&gt;</button>
+                <div class="teacher-slider">
+                    <div class="teacher-card">
+                        <img src="imgs/1.jpg" alt="张老师">
+                        <h4>张老师</h4>
+                        <p>资深编程专家，拥有10年教学经验</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="imgs/2.jpg" alt="李老师">
+                        <h4>李老师</h4>
+                        <p>人工智能研究员，曾在多家科技公司任职</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="imgs/3.jpg" alt="王老师">
+                        <h4>王老师</h4>
+                        <p>全栈开发工程师，擅长Web应用开发</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="imgs/4.jpg" alt="刘老师">
+                        <h4>刘老师</h4>
+                        <p>数据科学专家，精通机器学习算法</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="imgs/5.jpg" alt="陈老师">
+                        <h4>陈老师</h4>
+                        <p>UI/UX设计师，注重用户体验的产品设计</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-media">
+                <p>这里可以放置课程的图片或视频，展示课程的实际内容或教学环境</p>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>购买选项</h2>
+            <p>这里是课程的价格信息，包括任何折扣或促销活动</p>
+            <p>购买流程的简单说明</p>
+            <h3>支付方式</h3>
+            <ul>
+                <li>支付宝</li>
+                <li>微信支付</li>
+                <li>银行卡</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>常见问题</h2>
+            <dl>
+                <dt>问题1</dt>
+                <dd>回答1</dd>
+                <dt>问题2</dt>
+                <dd>回答2</dd>
+                <!-- 添加更多问题和回答 -->
+            </dl>
+        </section>
+
+        <section id="testimonials">
+            <h2>用户评价</h2>
+            <div class="testimonial">
+                <p>"这门课程非常棒！"</p>
+                <p>- 张三，学员</p>
+            </div>
+            <!-- 添加更多评价 -->
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <p>电话：123-456-7890</p>
+            <p>邮箱：info@example.com</p>
+            <form>
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">留言：</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 在线课程网站. 保留所有权利。</p>
+        <nav>
+            <a href="#sitemap">网站地图</a> |
+            <a href="#privacy">隐私政策</a> |
+            <a href="#terms">使用条款</a>
+        </nav>
+        <div class="social-media">
+            <a href="#" target="_blank">微博</a>
+            <a href="#" target="_blank">微信</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
